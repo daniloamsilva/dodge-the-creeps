@@ -45,8 +45,8 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2mbrp"]
-radius = 51.37
-height = 123.98
+radius = 31.0
+height = 87.98
 
 [node name="Mob" type="RigidBody2D" groups=["mobs"]]
 position = Vector2(1, 2)
@@ -58,10 +58,10 @@ metadata/_edit_group_ = true
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_fm8iy")
-animation = &"fly"
+animation = &"walk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-10.465, -1.99)
+position = Vector2(-0.145, 0)
 shape = SubResource("CapsuleShape2D_2mbrp")
 
 [node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
